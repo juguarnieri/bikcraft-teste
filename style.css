@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .menu a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.choose-bike {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #000;
+    color: #fff;
+}
+
+.choose-bike .titulo { 
+    color: #f4a700;
+}
+
+.choose-bike-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-bike-text {
+    max-width: 50%;
+}
+
+.choose-bike-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.choose-bike-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.choose-bike-text .btn {
+    padding: 10px 20px;
+    background: #f4a700;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.choose-bike-image img {
+    width: 500px;
+    margin-bottom: -10rem;
+    border-radius: 5px;
+}
+
+.bikes {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.bikes h2 {
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.bike-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bike-item {
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 300px;
+}
+
+.bike-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bike-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bike-item h3::before {
+    content: "";
+    /* Adiciona o quadrado antes do título */
+    display: inline-block;
+    width: 12px;
+    /* Largura do quadrado */
+    height: 12px;
+    /* Altura do quadrado */
+    background-color: #f4a700;
+    /* Cor amarela */
+    margin-right: 10px;
+    /* Espaço entre o quadrado e o texto */
+    border-radius: 2px;
+    /* Canto levemente arredondado (opcional) */
+}
+
+.bike-item p {
+    font-size: 1rem;
+    color: #f4a700;
+}
+
+.seguros {
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+}
+
+.motivational-quote {
+    display: flex;
+    height: 100%;
+}
+
+.motivational-quote-content {
+    display: flex;
+    width: 100%;
+}
+
+.motivational-quote-image {
+    flex: 1;
+}
+
+.motivational-quote-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.motivational-quote-text {
+    flex: 1;
+    background-color: #f4a700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    color: #000;
+    position: relative;
+}
+
+.motivational-quote-text blockquote {
+    margin: 0;
+    font-style: italic;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.motivational-quote-text q {
+    font-weight: bold;
+}
+
+.motivational-quote-text cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: left;
+    color: #333;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    background-color: rgb(74, 80, 80);
+}
+
+.plano {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.plano.prata {
+    width: 350px;
+    height: 300px;
+    margin-top: 3rem;
+}
+
+.plano.ouro {
+    width: 600px;
+    height: 400px;
+}
+
+h1 .plano.ouro {
+    color: #f4a700;
+}
+
+.cabecalho-plano {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho-plano h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: -2rem;
+}
+
+.cabecalho-plano .titulo-ouro {
+    color: #ffcc00;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cabecalho-plano .titulo-prata {
+    color: #c0c0c0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-h2 h2 {
+    font-size: 2rem;
+    margin: 0;
+    background-color: rgb(74, 80, 80);
+    color: #fff;
+}
+
+.highlight {
+    color: #f4a700;
+}
+
+.cabecalho-plano .preco {
+    font-size: 1.4rem;
+    color: #f4a700;
+    font-weight: bold;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-plano .preco .mensal {
+    font-size: 1rem;
+    color: #999;
+    margin-top: -0.5rem;
+}
+
+.plano ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plano ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.plano ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #f9a825;
+}
+
+.plano button {
+    background-color: #30302f;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0;
+    transition: background-color 0.3s ease;
+}
+
+.plano button:hover {
+    background-color: #5a5652;
+}
+
+.plano.ouro button {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.plano.prata button:hover {
+    background-color: #7a5c21;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.separator {
+    width: 15rem;
+    height: 1px;
+    background-color: #2b292993;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f4a700;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    color: #888;
+    font-size: 0.85rem;
+}
